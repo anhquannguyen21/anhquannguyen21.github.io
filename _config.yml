@@ -14,8 +14,9 @@ author: Nguyễn Xuân Anh Quân
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    #- Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
+    - Learn Machine Learning: "https://machinelearningcoban.com/"
   #Author's home: "https://deanattali.com"
   
 
