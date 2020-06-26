@@ -4,7 +4,7 @@
 title: Website của Nguyễn Xuân Anh Quân
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+#description: A virtual proof that I'm awesome
 
 # Your name to show in the footer
 author: Nguyễn Xuân Anh Quân
@@ -64,7 +64,7 @@ social-network-links:
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: true
   linkedin: true
   vk: false
