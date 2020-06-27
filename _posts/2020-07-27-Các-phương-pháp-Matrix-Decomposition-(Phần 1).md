@@ -158,8 +158,9 @@ Hệ có nghiệm
 x= [ 1.00000057 -2.00000129 -2.00000103]
 ```
 # 2. Tính định thức 
-Với ma trận vuông khả nghịch <img src="https://i.upmath.me/svg/A" alt="A" /> ta có <img src="https://i.upmath.me/svg/det(A)%3Ddet(LU)%3Ddet(L).det(U)%3Ddet(U)" alt="det(A)=det(LU)=det(L).det(U)=det(U)" />  
+Với ma trận vuông khả nghịch <img src="https://i.upmath.me/svg/A" alt="A" /> ta có <img src="https://i.upmath.me/svg/det(A)%3Ddet(LU)%3Ddet(L).det(U)%3Ddet(U)" alt="det(A)=det(LU)=det(L).det(U)" />  
 Mà <img src="https://i.upmath.me/svg/L%2C%20U" alt="L, U" /> là các ma trận tam giác nên định thức bằng tích các phần tử trên đường chéo chính và đường chéo chính của <img src="https://i.upmath.me/svg/L" alt="L" /> đều là số <img src="https://i.upmath.me/svg/1" alt="1" /> nên <img src="https://i.upmath.me/svg/det(L)%3D1" alt="det(L)=1" />  
+Do đó <img src="https://i.upmath.me/svg/det(A)%3Ddet(U)" alt="det(A)=det(U)" />  
 
 Ví dụ với ma trận <img src="https://i.upmath.me/svg/A%3D%5Cbegin%7Bbmatrix%7D%208%20%26%202%20%26%209%20%5C%5C%204%26%209%20%26%204%20%5C%5C%206%20%26%207%20%20%26%209%20%5Cend%7Bbmatrix%7D" alt="A=\begin{bmatrix} 8 &amp; 2 &amp; 9 \\ 4&amp; 9 &amp; 4 \\ 6 &amp; 7  &amp; 9 \end{bmatrix}" />, như đã làm ở trên thì <img src="https://i.upmath.me/svg/A" alt="A" /> có phân tích <img src="https://i.upmath.me/svg/LU" alt="LU" /> là  
 <img src="https://i.upmath.me/svg/A%3D%5Cbegin%7Bbmatrix%7D%201%20%26%200%20%26%200%20%5C%5C%20%5Cdfrac%7B1%7D%7B2%7D%26%201%20%26%200%20%5C%5C%20%5Cdfrac%7B3%7D%7B4%7D%20%26%20%5Cdfrac%7B11%7D%7B16%7D%20%20%26%201%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%208%20%26%202%20%26%209%20%5C%5C%200%20%26%208%20%26%20%5Cdfrac%7B-1%7D%7B2%7D%20%5C%5C%200%20%26%200%20%20%26%20%5Cdfrac%7B83%7D%7B32%7D%20%5Cend%7Bbmatrix%7D" alt="A=\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ \dfrac{1}{2}&amp; 1 &amp; 0 \\ \dfrac{3}{4} &amp; \dfrac{11}{16}  &amp; 1 \end{bmatrix} \begin{bmatrix} 8 &amp; 2 &amp; 9 \\ 0 &amp; 8 &amp; \dfrac{-1}{2} \\ 0 &amp; 0  &amp; \dfrac{83}{32} \end{bmatrix}" />  
