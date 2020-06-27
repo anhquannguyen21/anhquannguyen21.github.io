@@ -18,8 +18,8 @@ To be honest, I'm having some trouble remembering right now, so why don't you ju
 -->
 Tôi tên là Nguyễn Xuân Anh Quân, sinh năm 1999.  
 Hiện đang là sinh viên lớp Cử nhân Tài năng K17 Khoa Công Nghệ Thông Tin, Đại học Khoa Học Tự Nhiên, ĐHQG-HCM.  
-Lĩnh vực nghiên cứu yêu thích:  
-- Linear Algebra
+Lĩnh vực yêu thích:  
+- Linear Algebra and Calculus
 - Numerical Optimization
 - Machine Learning
 - Deep Learning
