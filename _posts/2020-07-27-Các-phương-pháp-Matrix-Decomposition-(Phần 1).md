@@ -158,7 +158,8 @@ Hệ có nghiệm
 x= [ 1.00000057 -2.00000129 -2.00000103]
 ```
 # 2. Tính định thức 
-Với ma trận vuông khả nghịch <img src="https://i.upmath.me/svg/A" alt="A" /> ta có <img src="https://i.upmath.me/svg/det(A)%3Ddet(LU)%3Ddet(L).det(U)%3Ddet(U)" alt="det(A)=det(LU)=det(L).det(U)" />  
+Với ma trận vuông khả nghịch <img src="https://i.upmath.me/svg/A" alt="A" /> ta có <img src="https://i.upmath.me/svg/det(A)%3Ddet(LU)%3Ddet(L).det(U)" alt="det(A)=det(LU)=det(L).det(U)" />  
+
 Mà <img src="https://i.upmath.me/svg/L%2C%20U" alt="L, U" /> là các ma trận tam giác nên định thức bằng tích các phần tử trên đường chéo chính và đường chéo chính của <img src="https://i.upmath.me/svg/L" alt="L" /> đều là số <img src="https://i.upmath.me/svg/1" alt="1" /> nên <img src="https://i.upmath.me/svg/det(L)%3D1" alt="det(L)=1" />  
 Do đó <img src="https://i.upmath.me/svg/det(A)%3Ddet(U)" alt="det(A)=det(U)" />  
 
