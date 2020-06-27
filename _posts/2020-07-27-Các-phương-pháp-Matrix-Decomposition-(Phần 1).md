@@ -173,6 +173,7 @@ Ví dụ với ma trận <img src="https://i.upmath.me/svg/A%3D%5Cbegin%7Bbmatri
 <img src="https://i.upmath.me/svg/A%3D%5Cbegin%7Bbmatrix%7D%201%20%26%200%20%26%200%20%5C%5C%20%5Cdfrac%7B1%7D%7B2%7D%26%201%20%26%200%20%5C%5C%20%5Cdfrac%7B3%7D%7B4%7D%20%26%20%5Cdfrac%7B11%7D%7B16%7D%20%20%26%201%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%208%20%26%202%20%26%209%20%5C%5C%200%20%26%208%20%26%20%5Cdfrac%7B-1%7D%7B2%7D%20%5C%5C%200%20%26%200%20%20%26%20%5Cdfrac%7B83%7D%7B32%7D%20%5Cend%7Bbmatrix%7D" alt="A=\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ \dfrac{1}{2}&amp; 1 &amp; 0 \\ \dfrac{3}{4} &amp; \dfrac{11}{16}  &amp; 1 \end{bmatrix} \begin{bmatrix} 8 &amp; 2 &amp; 9 \\ 0 &amp; 8 &amp; \dfrac{-1}{2} \\ 0 &amp; 0  &amp; \dfrac{83}{32} \end{bmatrix}" />  
 Khi đó <img src="https://i.upmath.me/svg/det(A)%3D%5Cbegin%7Bvmatrix%7D%208%20%26%202%20%26%209%20%5C%5C%200%20%26%208%20%26%20%5Cdfrac%7B-1%7D%7B2%7D%20%5C%5C%200%20%26%200%20%20%26%20%5Cdfrac%7B83%7D%7B32%7D%20%5Cend%7Bvmatrix%7D%3D%208.8.%5Cdfrac%7B83%7D%7B32%7D%3D166" alt="det(A)=\begin{vmatrix} 8 &amp; 2 &amp; 9 \\ 0 &amp; 8 &amp; \dfrac{-1}{2} \\ 0 &amp; 0  &amp; \dfrac{83}{32} \end{vmatrix}= 8.8.\dfrac{83}{32}=166" />  
 
+
 Kiểm tra lại bằng Python  
 ```python
 def determinant_of_matrix(A):
