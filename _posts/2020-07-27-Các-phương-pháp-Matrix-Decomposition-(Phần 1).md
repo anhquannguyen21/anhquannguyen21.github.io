@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Các phương pháp Matrix Decomposition
+title: Các phương pháp Matrix Decomposition (Phần 1)
 tags: [Linear Algebra]
 ---
 
