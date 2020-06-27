@@ -181,12 +181,12 @@ Trong trường hợp <img src="https://i.upmath.me/svg/A" alt="A" /> là ma tr�
 
 
 # IV. Tài liệu tham khảo 
-# 1. https://courses.grainger.illinois.edu/cs357/sp2020/notes/ref-9-linsys.html
-# 2. https://vi.wikipedia.org/wiki/Ph%C3%A2n_t%C3%ADch_LU
-# 3. https://fit.mta.edu.vn/files/DanhSach/BaigiangDSTT_16.pdf
-# 4. http://www.seas.ucla.edu/~vandenbe/133A/133A-notes.pdf
-# 5. http://www.math.iit.edu/~fass/477577_Chapter_7.pdf
-# 6. https://machinelearningmastery.com/introduction-to-matrix-decompositions-for-machine-learning/
+# 1. <https://courses.grainger.illinois.edu/cs357/sp2020/notes/ref-9-linsys.html>
+# 2. <https://vi.wikipedia.org/wiki/Ph%C3%A2n_t%C3%ADch_LU>
+# 3. <https://fit.mta.edu.vn/files/DanhSach/BaigiangDSTT_16.pdf>
+# 4. <http://www.seas.ucla.edu/~vandenbe/133A/133A-notes.pdf>
+# 5. <http://www.math.iit.edu/~fass/477577_Chapter_7.pdf>
+# 6. <https://machinelearningmastery.com/introduction-to-matrix-decompositions-for-machine-learning/>
 
 
 
