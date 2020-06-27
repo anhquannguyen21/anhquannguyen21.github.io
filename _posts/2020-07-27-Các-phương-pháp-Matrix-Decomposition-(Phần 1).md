@@ -152,6 +152,12 @@ def solve_system_equation(A,b):
   x=np.linalg.inv(U).dot((np.linalg.inv(L).dot(b)))
   return x
 ```
+```python
+A=np.array([[3,2,-1],[2,-2,4],[-1, 0.5, -1]], dtype=np.float32)
+b=np.array([1,-2,0])
+x=solve_system_equation(A,b)
+print("x=",x)
+```
 Kết quả chạy  
 Hệ có nghiệm
 ```python
