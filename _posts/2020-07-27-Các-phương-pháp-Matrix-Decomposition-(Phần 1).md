@@ -1,3 +1,10 @@
+---
+layout: post
+title: Các phương pháp Matrix Decomposition
+tags: [Linear Algebra]
+---
+
+
 # I. Giới thiệu  
 - Trong Machine Learning, chúng ta thường xử lý dữ liệu được biểu diễn dưới dạng ma trận, thường các ma trận này có kích thước lớn. Rất nhiều các bài toán học máy được giải quyết bằng cách sử dụng các phương pháp của Đại số tuyến tính. Trong các bài này mình sẽ trình bày về các phương pháp phân tích ma trận (hay Phân rã ma trận) (Matrix Decomposition).  
 - Việc phân tích một ma trận là đưa ma trận đó về tích của 2 hay nhiều ma trận đặc biệt khác, thường là ma trận đường chéo và ma trận tam giác. Việc phân tích này nhằm mục đích dễ dàng tính định thức, tìm ma trận nghịch đảo, giải hệ phương trình tuyến tính, giảm chiều dữ liệu,... Matrix Decomposition cũng được ứng dụng trong bài toán về Hệ thống khuyến nghị (Recommendation System).  
