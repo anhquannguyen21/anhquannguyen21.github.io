@@ -94,6 +94,7 @@ Kết quả cho ra hoàn toàn tương tự.
 - Ma trận <img src="https://i.upmath.me/svg/P" alt="P" /> chỉ có các phần tử <img src="https://i.upmath.me/svg/0%2C1" alt="0,1" />. Ví dụ với ma trận <img src="https://i.upmath.me/svg/%203%20%5Ctimes%203" alt=" 3 \times 3" />  
 <img src="https://i.upmath.me/svg/A%3D%5Cbegin%7Bbmatrix%7D%200%20%26%205%20%26%205%20%5C%5C%202%20%26%209%20%26%200%20%5C%5C%206%20%26%208%20%20%26%208%20%5Cend%7Bbmatrix%7D%3D%5Cbegin%7Bbmatrix%7D%200%20%26%200%20%26%201%20%5C%5C%200%20%26%201%20%26%200%20%5C%5C%201%20%26%200%20%20%26%200%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%201%20%26%200%20%26%200%20%5C%5C%20%5Cdfrac%7B1%7D%7B3%7D%20%26%201%20%26%200%20%5C%5C%200%20%26%20%5Cdfrac%7B15%7D%7B19%7D%20%20%26%201%20%5Cend%7Bbmatrix%7D%5Cbegin%7Bbmatrix%7D%206%20%26%208%20%26%208%20%5C%5C%200%20%26%20%5Cdfrac%7B19%7D%7B3%7D%20%26%20%5Cdfrac%7B-8%7D%7B3%7D%5C%5C%200%20%26%200%20%26%20%5Cdfrac%7B135%7D%7B19%7D%20%5Cend%7Bbmatrix%7D%20" alt="A=\begin{bmatrix} 0 &amp; 5 &amp; 5 \\ 2 &amp; 9 &amp; 0 \\ 6 &amp; 8  &amp; 8 \end{bmatrix}=\begin{bmatrix} 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 \\ 1 &amp; 0  &amp; 0 \end{bmatrix} \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ \dfrac{1}{3} &amp; 1 &amp; 0 \\ 0 &amp; \dfrac{15}{19}  &amp; 1 \end{bmatrix}\begin{bmatrix} 6 &amp; 8 &amp; 8 \\ 0 &amp; \dfrac{19}{3} &amp; \dfrac{-8}{3}\\ 0 &amp; 0 &amp; \dfrac{135}{19} \end{bmatrix} " />  
 - Ta có thể sử dụng hàm <img src="https://i.upmath.me/svg/lu" alt="lu" /> trong thư viện <img src="https://i.upmath.me/svg/scipy.linalg" alt="scipy.linalg" />  
+
 ```python
 import numpy as np
 from scipy.linalg import lu
@@ -107,6 +108,7 @@ print(P.T @ A)
 print(L @ U)
 ```
 Kết quả chạy
+
 ```python
 P= [[0. 0. 1.]
  [1. 0. 0.]
