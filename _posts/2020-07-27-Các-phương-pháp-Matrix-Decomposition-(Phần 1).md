@@ -49,6 +49,7 @@ Ta có
 Thuật toán ở trên có thể thể hiện mã giả (peusedocode) như sau  
 [![106418939-713758882807182-5415356513796754688-n.png](https://i.postimg.cc/0jCWZmyf/106418939-713758882807182-5415356513796754688-n.png)](https://postimg.cc/hQf1tXxz)  
 - Code Python  
+
 ```python
 import numpy as np
 def LU_Decomposition(A):
