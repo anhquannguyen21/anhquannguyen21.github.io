@@ -8,8 +8,10 @@ tags: [Linear Algebra]
 # I. Giới thiệu  
 - Trong Machine Learning, chúng ta thường xử lý dữ liệu được biểu diễn dưới dạng ma trận, thường các ma trận này có kích thước lớn. Rất nhiều các bài toán học máy được giải quyết bằng cách sử dụng các phương pháp của Đại số tuyến tính. Trong các bài này mình sẽ trình bày về các phương pháp phân tích ma trận (hay Phân rã ma trận) (Matrix Decomposition).  
 - Việc phân tích một ma trận là đưa ma trận đó về tích của 2 hay nhiều ma trận đặc biệt khác, thường là ma trận đường chéo và ma trận tam giác. Việc phân tích này nhằm mục đích dễ dàng tính định thức, tìm ma trận nghịch đảo, giải hệ phương trình tuyến tính, giảm chiều dữ liệu,... Matrix Decomposition cũng được ứng dụng trong bài toán về Hệ thống khuyến nghị (Recommendation System).  
-- Một số phương pháp phân tích ma trận phổ biến như LU, QR, Cholesky, Eigen Decomposition (Chéo hóa ma trận), SVD,... Trong đó, SVD được sử dụng nhiều trong các thuật toán Học máy và Thị giác máy tính. Trong phần này mình sẽ trình bày một phương pháp đơn giản nhất là phân tích LU. (LU là viết tắt của Lower Triangular Matrix và Upper Triangular Matrix)  
-# II. LU Decomposition
+- Một số phương pháp phân tích ma trận phổ biến như LU, QR, Cholesky, Eigen Decomposition (Chéo hóa ma trận), SVD,... Trong đó, SVD được sử dụng nhiều trong các thuật toán Học máy và Thị giác máy tính. Trong phần này mình sẽ trình bày một phương pháp đơn giản nhất là phân tích LU. (LU là viết tắt của Lower Triangular Matrix và Upper Triangular Matrix).  
+
+# II. LU Decomposition  
+
 ## 1. Định nghĩa
 - Cho <img src="https://i.upmath.me/svg/A%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bn%20%5Ctimes%20n%7D" alt="A \in \mathbb{R}^{n \times n}" /> là một ma trận vuông, phân tích LU của <img src="https://i.upmath.me/svg/A" alt="A" /> là cách viết <img src="https://i.upmath.me/svg/A" alt="A" /> thành tích của 2 ma trận có dạng <img src="https://i.upmath.me/svg/A%3DLU" alt="A=LU" /> trong đó <img src="https://i.upmath.me/svg/L%2CU" alt="L,U" /> là các ma trận tam giác dưới và tam giác trên có cùng kích thước với <img src="https://i.upmath.me/svg/A" alt="A" />. Người ta chứng minh được rằng mọi ma trận cấp <img src="https://i.upmath.me/svg/n" alt="n" /> thỏa mãn phân tích <img src="https://i.upmath.me/svg/LU" alt="LU" /> khi và chỉ khi các định thức con chính khác <img src="https://i.upmath.me/svg/0" alt="0" />, phân tích sẽ *duy nhất* nếu thêm điều kiện các phần tử trên đường chéo chính của ma trận <img src="https://i.upmath.me/svg/L" alt="L" /> (hoặc <img src="https://i.upmath.me/svg/U" alt="U" />) đều bằng <img src="https://i.upmath.me/svg/1" alt="1" />.  
 - Ví dụ với ma trận vuông <img src="https://i.upmath.me/svg/%203%20%5Ctimes%203" alt=" 3 \times 3" />  
@@ -23,7 +25,8 @@ tags: [Linear Algebra]
 <img src="https://i.upmath.me/svg/A%3D%5Cbegin%7Bbmatrix%7D%206%20%26%2018%20%26%203%20%5C%5C%202%20%26%2012%20%26%201%20%5C%5C%204%20%26%2015%20%20%26%203%20%5Cend%7Bbmatrix%7D" alt="A=\begin{bmatrix} 6 &amp; 18 &amp; 3 \\ 2 &amp; 12 &amp; 1 \\ 4 &amp; 15  &amp; 3 \end{bmatrix}" />
   
 [![106179321-303873930784112-5374058648779268154-n.png](https://i.postimg.cc/d1TnrJwB/106179321-303873930784112-5374058648779268154-n.png)](https://postimg.cc/62tdNJ72)  
-[![105683156-1189060454801575-774184744179493534-n.png](https://i.postimg.cc/SRk8R4sj/105683156-1189060454801575-774184744179493534-n.png)](https://postimg.cc/Q9YVYRcr)
+[![105683156-1189060454801575-774184744179493534-n.png](https://i.postimg.cc/SRk8R4sj/105683156-1189060454801575-774184744179493534-n.png)](https://postimg.cc/Q9YVYRcr)  
+
 ## 2. Thuật toán tìm LU Decomposition 
 - Ta có thể biểu diễn <img src="https://i.upmath.me/svg/A%3DLU" alt="A=LU" /> như sau:  
 <img src="https://i.upmath.me/svg/%5Cbegin%7Bbmatrix%7D%20A_%7B11%7D%20%26%20A_%7B1%2C%202%3An%7D%20%5C%5CA_%7B2%3An%2C1%7D%20%26%20A_%7B2%3An%2C2%3An%7D%5Cend%7Bbmatrix%7D%3D%20%5Cbegin%7Bbmatrix%7D%201%20%26%200%20%5C%5CL_%7B2%3An%2C1%7D%20%26%20L_%7B2%3An%2C2%3An%7D%5Cend%7Bbmatrix%7D%5Cbegin%7Bbmatrix%7D%20U_%7B11%7D%20%26%20U_%7B1%2C%202%3An%7D%20%5C%5C0%20%26%20U_%7B2%3An%2C2%3An%7D%5Cend%7Bbmatrix%7D" alt="\begin{bmatrix} A_{11} &amp; A_{1, 2:n} \\A_{2:n,1} &amp; A_{2:n,2:n}\end{bmatrix}= \begin{bmatrix} 1 &amp; 0 \\L_{2:n,1} &amp; L_{2:n,2:n}\end{bmatrix}\begin{bmatrix} U_{11} &amp; U_{1, 2:n} \\0 &amp; U_{2:n,2:n}\end{bmatrix}" />  
@@ -134,7 +137,8 @@ U= [[ 6.          9.          8.        ]
  [0. 5. 5.]
  [2. 3. 0.]]
 ```
-# III. Ứng dụng LU Decomposition
+# III. Ứng dụng LU Decomposition  
+
 # 1. Giải hệ phương trình tuyến tính
 Cho hệ phương phương trình tuyến tính biểu diễn dưới dạng ma trận <img src="https://i.upmath.me/svg/Ax%3Db" alt="Ax=b" /> trong đó <img src="https://i.upmath.me/svg/A%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bn%20%5Ctimes%20n%7D%2C%20x%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bn%7D%2C%20b%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bn%7D%20" alt="A \in \mathbb{R}^{n \times n}, x \in \mathbb{R}^{n}, b \in \mathbb{R}^{n} " />.  
  
