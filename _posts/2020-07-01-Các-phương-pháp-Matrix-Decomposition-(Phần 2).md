@@ -73,7 +73,8 @@ def CholeskyDecomposition(A):
             else:
                 L[i][j]=(A[i][j]-np.sum(L[i,:j]*L[j,:j]))/(L[j][j])
     return L.T
-```
+```  
+
 - Kết quả chạy
 
 ```python
@@ -82,7 +83,7 @@ R=CholeskyDecomposition(A)
 print("R=",R)
 print("Check")
 print("A= ", R.T @ R)
-```
+```  
 
 ```python
 R= [[ 5.  3. -1.]
@@ -92,17 +93,23 @@ Check
 A=  [[25. 15. -5.]
  [15. 18.  0.]
  [-5.  0. 11.]]
-```
+```  
+
 Kết quả cho ra đúng với kết quả ta làm ở trên.  
+
 - Ta có thể dùng hàm cholesky trong thư viện <img src="https://i.upmath.me/svg/np.linalg" alt="np.linalg" />.  
-Code Python: 
+
+Code Python:  
+
 ```python
 R=np.linalg.cholesky(A)
 print(L)
 R_T=L.transpose()
 print(R.dot(R_T))
-```
+```  
+
 Kết quả hoàn toàn giống.  
+
 # III. Ứng dụng Cholesky Decomposition  
 
 ## 1. Giải hệ phương trình tuyến tính
