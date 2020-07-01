@@ -76,9 +76,7 @@ def CholeskyDecomposition(A):
 ```  
   
   
-- Kết quả chạy  
-  
-  
+Kết quả chạy  
 
 ```python
 A=np.array([[25,15,-5],[15,18,0],[-5,0,11]])
