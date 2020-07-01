@@ -149,7 +149,7 @@ Khi đó ma trận Gram  <img src="https://i.upmath.me/svg/A%3D%20B%5ETB" alt="A
 Về phân tích QR mình sẽ trình bày ở bài sau.  
 
 
-# III. Tài liệu tham khảo
+# V. Tài liệu tham khảo
 1. <http://www.seas.ucla.edu/~vandenbe/133A/133A-notes.pdf>
 2. <https://alexisalulema.com/2018/01/20/cholesky-decomposition-for-linear-regression-with-tensorflow/>
 3. Ebook Machine Learning cơ bản, Vũ Hữu Tiệp.
