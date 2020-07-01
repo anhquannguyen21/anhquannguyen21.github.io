@@ -54,7 +54,9 @@ Do đó <img src="https://i.upmath.me/svg/R_%7B2%3An%2C2%3An%7D%5ETR_%7B2%3An%2C
 [![105672907-965851400501778-5993859188482975687-n.png](https://i.postimg.cc/DZkBbD2Q/105672907-965851400501778-5993859188482975687-n.png)](https://postimg.cc/7C9gFKJb) 
 **Ví dụ**: Tìm phân tích Cholesky của ma trận  
 <img src="https://i.upmath.me/svg/%5Cbegin%7Bbmatrix%7D%2025%20%26%2015%20%26%20-5%20%5C%5C%2015%20%26%2018%20%26%200%20%5C%5C%20-5%20%26%200%20%26%2011%20%5Cend%7Bbmatrix%7D" alt="\begin{bmatrix} 25 &amp; 15 &amp; -5 \\ 15 &amp; 18 &amp; 0 \\ -5 &amp; 0 &amp; 11 \end{bmatrix}" />  
-[![106213020-2692502164353723-4322951759308171152-n.png](https://i.postimg.cc/7YVdrxqF/106213020-2692502164353723-4322951759308171152-n.png)](https://postimg.cc/N5Kp1v9D)
+[![106213020-2692502164353723-4322951759308171152-n.png](https://i.postimg.cc/7YVdrxqF/106213020-2692502164353723-4322951759308171152-n.png)](https://postimg.cc/N5Kp1v9D)  
+  
+  
 Để lập trình được, các phần tử trong ma trận được viết lại thành  
 [![106234882-2609404785965630-4127219280057773479-n.png](https://i.postimg.cc/br3vt7js/106234882-2609404785965630-4127219280057773479-n.png)](https://postimg.cc/PvvhGFJj)  
 - Code Python
