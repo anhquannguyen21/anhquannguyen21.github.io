@@ -74,8 +74,6 @@ def CholeskyDecomposition(A):
                 L[i][j]=(A[i][j]-np.sum(L[i,:j]*L[j,:j]))/(L[j][j])
     return L.T
 ```  
-  
-  
 Kết quả chạy  
 
 ```python
@@ -96,7 +94,6 @@ A=  [[25. 15. -5.]
  [15. 18.  0.]
  [-5.  0. 11.]]
 ```  
-  
   
 Kết quả cho ra đúng với kết quả ta làm ở trên.  
 
