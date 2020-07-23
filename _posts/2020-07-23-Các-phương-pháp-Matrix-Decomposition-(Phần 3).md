@@ -120,7 +120,7 @@ Q,R=QR_Decomposition_GramSchmidt_2(A)
 print(Q)
 print(R)
 ```
-- Kết quả chạy
+
 ```python
 A=np.array([[1,1,1],[0,1,1],[0,0,1]])
 Q,R=QR_Decomposition_GramSchmidt_2(A)
