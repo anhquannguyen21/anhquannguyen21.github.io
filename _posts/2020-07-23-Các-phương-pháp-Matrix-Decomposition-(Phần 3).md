@@ -100,12 +100,7 @@ def QR_Decomposition_GramSchimidt_1(A):
     Q=GramSchmidtProcess(A)
     R=(Q.T).dot(A.T)
     return Q,R
-
-A=np.array([[1,1,1],[0,1,1],[0,0,1]])
-Q,R=QR_Decomposition_GramSchimidt_1(A)
-print(Q)
-print(R)
-
+    
 #Cách 2
 def QR_Decomposition_GramSchmidt_2(A):
     Q=GramSchmidtProcess(A)
@@ -116,9 +111,6 @@ def QR_Decomposition_GramSchmidt_2(A):
         for j in range(0, i+1):
             R[j][i]=np.inner(A[:,i], Q[:,j])
     return Q,R
-Q,R=QR_Decomposition_GramSchmidt_2(A)
-print(Q)
-print(R)
 ```
 
 ```python
