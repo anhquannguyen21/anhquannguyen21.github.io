@@ -23,7 +23,7 @@ Khi đó <img src="https://i.upmath.me/svg/V" alt="V" /> là không gian Euclid.
 Dấu <img src="https://i.upmath.me/svg/%3D" alt="=" /> xảy ra khi và chỉ khi <img src="https://i.upmath.me/svg/u%2C%20v" alt="u, v" /> phụ thuộc tuyến tính.  
 - [Bất đẳng thức tam giác]. Với mọi <img src="https://i.upmath.me/svg/u%2C%20v%20%5Cin%20V" alt="u, v \in V" /> ta có   
 <img src="https://i.upmath.me/svg/%5C%7Cu%2Bv%20%5C%7C%20%5Cle%20%5C%7Cu%5C%7C%20%2B%20%5C%7Cv%20%5C%7C" alt="\|u+v \| \le \|u\| + \|v \|" />.  
-Dấu <img src="https://i.upmath.me/svg/%3D" alt="=" /> 
+Dấu <img src="https://i.upmath.me/svg/%3D" alt="=" /> xảy 
 ra khi và chỉ khi tồn tại <img src="https://i.upmath.me/svg/%5Clambda%20%5Cge%200" alt="\lambda \ge 0" /> sao cho <img src="https://i.upmath.me/svg/v%3D%20%5Clambda%20u" alt="v= \lambda u" />.  
 - Định nghĩa. Cho <img src="https://i.upmath.me/svg/V" alt="V" /> là không gian Euclid và <img src="https://i.upmath.me/svg/u%2C%20v%20%5Cin%20V" alt="u, v \in V" />. Góc giữa hai vector <img src="https://i.upmath.me/svg/u%2C%20v" alt="u, v" /> là <img src="https://i.upmath.me/svg/%5Ctheta%20%20%5Cin%5B0%2C%20%5Cpi%5D" alt="\theta  \in[0, \pi]" /> thỏa <img src="https://i.upmath.me/svg/cos%5Ctheta%3D%20%5Cdfrac%7B%5Clangle%20u%2C%20v%5Crangle%7D%7B%5C%7Cu%5C%7C%5C%7Cv%5C%7C%7D" alt="cos\theta= \dfrac{\langle u, v\rangle}{\|u\|\|v\|}" />
 ## 2. Cơ sở trực giao và cơ sở trực chuẩn, quá trình trực chuẩn hóa Gram-Schmidt  
