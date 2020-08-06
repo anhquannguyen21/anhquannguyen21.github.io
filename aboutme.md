@@ -19,10 +19,8 @@ To be honest, I'm having some trouble remembering right now, so why don't you ju
 Tôi là Quân.  
 Hiện đang là sinh viên lớp Cử nhân Tài năng K17 Khoa Công Nghệ Thông Tin, Đại học Khoa Học Tự Nhiên, ĐHQG-HCM.  
 Lĩnh vực yêu thích:  
-- Linear Algebra and Calculus
-- Numerical Optimization
+- Linear Algebra, Calculus and Optimization
 - Machine Learning
 - Deep Learning
 - Computer Vision
-- Natural Language Processing
 
