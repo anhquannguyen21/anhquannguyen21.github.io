@@ -40,13 +40,18 @@ Một cách hình học: Đoạn thẳng nối giữa <img src="https://i.upmath
 ### 2. Kiểm tra tính chất lồi dựa vào đạo hàm bậc nhất (First-order characterization of convexity)
 - **Định lý**: Giả sử hàm số <img src="https://i.upmath.me/svg/f" alt="f" /> có tập xác định <img src="https://i.upmath.me/svg/dom(f)" alt="dom(f)" />, có đạo hàm tại mọi điểm trên tập xác định, hay vector gradient của <img src="https://i.upmath.me/svg/f" alt="f" /> là <img src="https://i.upmath.me/svg/%5Cnabla%20f%20%3A%3D%20%5Cbigg(%5Cdfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20x_1%7D(x)%2C...%2C%20%5Cdfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20x_d%7D(x)%5Cbigg)" alt="\nabla f := \bigg(\dfrac{\partial f}{\partial x_1}(x),..., \dfrac{\partial f}{\partial x_d}(x)\bigg)" /> tồn tại với mọi <img src="https://i.upmath.me/svg/x%20%5Cin%20dom(f)" alt="x \in dom(f)" />. Khi đó hàm <img src="https://i.upmath.me/svg/f" alt="f" /> lồi nếu và chỉ nếu <img src="https://i.upmath.me/svg/dom(f)" alt="dom(f)" /> lồi và <img src="https://i.upmath.me/svg/f(y)%20%5Cge%20f(x)%2B%20%5Cnabla%20f(x)%5ET(y-x)" alt="f(y) \ge f(x)+ \nabla f(x)^T(y-x)" /> với mọi <img src="https://i.upmath.me/svg/x%2C%20y%20%5Cin%20dom(f)" alt="x, y \in dom(f)" />.  
 Một cách trực quan: Hàm số là lồi nếu mặt tiếp tuyến tại một điểm bất kỳ trên đồ thị hàm số không nằm trên đồ thị đó.
- [![B4.png](https://i.postimg.cc/8z62FM06/B4.png)](https://postimg.cc/bZqCWD8y)
+ [![B4.png](https://i.postimg.cc/8z62FM06/B4.png)](https://postimg.cc/bZqCWD8y)  
+   
+   
 ### 3. Kiểm tra tính chất lồi dựa vào đạo hàm bậc hai (Second-order characterization of convexity)
 - Hàm <img src="https://i.upmath.me/svg/f%3A%20dom(f)%20%5Crightarrow%20%5Cmathbb%7BR%7D" alt="f: dom(f) \rightarrow \mathbb{R}" /> được gọi là twice continuously differentiable nếu <img src="https://i.upmath.me/svg/%5Cnabla%20f" alt="\nabla f" /> có đạo hàm (differentiable) và <img src="https://i.upmath.me/svg/%5Cnabla%5E2%20f" alt="\nabla^2 f" /> liên tục (continuous).
 - **Định lý**: Giả sử hàm số <img src="https://i.upmath.me/svg/f" alt="f" /> có tập xác định <img src="https://i.upmath.me/svg/dom(f)" alt="dom(f)" />, và <img src="https://i.upmath.me/svg/f" alt="f" /> twice
 continuously differentiable và ma trận Hessian <img src="https://i.upmath.me/svg/H" alt="H" /> của <img src="https://i.upmath.me/svg/f" alt="f" />  
 [![B4.png](https://i.postimg.cc/fbhqPFTH/B4.png)](https://postimg.cc/fVBvt8dX)  
  là ma trận đối xứng và tồn tại với mọi <img src="https://i.upmath.me/svg/x%5Cin%20dom(f)" alt="x\in dom(f)" />. Khi đó <img src="https://i.upmath.me/svg/f" alt="f" /> là hàm lồi nếu và chỉ nếu <img src="https://i.upmath.me/svg/dom(f)" alt="dom(f)" /> lồi và với mọi <img src="https://i.upmath.me/svg/x%20%5Cin%20dom(f)" alt="x \in dom(f)" /> ta có <img src="https://i.upmath.me/svg/%20H%20%5Csucceq0" alt=" H \succeq0" />, hay <img src="https://i.upmath.me/svg/H" alt="H" /> là ma trận nửa xác định dương. Nếu <img src="https://i.upmath.me/svg/f" alt="f" /> là hàm lồi chặt thì <img src="https://i.upmath.me/svg/H" alt="H" /> là ma trận xác định dương.  
+   
+  
+  
 ### 4. Local Minimum và Global Minimum
 - Vấn đề của Gradient Descent là nó chỉ tìm được một điểm cực tiểu local minimum và ta không biết được điểm đó có phải là global minimum hay không. Tuy nhiên có một tính chất qua trọng sau: Nếu hàm số đó làm hàm lồi (convex) thì local minimum đó cũng chính là global minimum, tính chất này sẽ chứng minh sau đây.  
 - **Định nghĩa**: Một local minimum (điểm tối ưu cục bộ) của hàm <img src="https://i.upmath.me/svg/f%3A%20dom(f)%20%5Crightarrow%20%5Cmathbb%7BR%7D" alt="f: dom(f) \rightarrow \mathbb{R}" /> là điểm <img src="https://i.upmath.me/svg/x" alt="x" /> sao cho tồn tại <img src="https://i.upmath.me/svg/%5Cepsilon%20%3E%200" alt="\epsilon &gt; 0" /> với <img src="https://i.upmath.me/svg/f(x)%20%5Cle%20f(y)" alt="f(x) \le f(y)" /> với mọi <img src="https://i.upmath.me/svg/y%20%5Cin%20dom(f)" alt="y \in dom(f)" /> thỏa mãn <img src="https://i.upmath.me/svg/%5C%7Cy-x%5C%7C%20%3C%20%5Cepsilon" alt="\|y-x\| &lt; \epsilon" /> .  
@@ -91,9 +96,9 @@ Ta chọn <img src="https://i.upmath.me/svg/%5Ceta" alt="\eta" /> sao cho <img s
 Giải phương trình đạo hàm <img src="https://i.upmath.me/svg/q'(%5Ceta)%3D0" alt="q'(\eta)=0" /> được <img src="https://i.upmath.me/svg/%5Ceta%3D%5Cdfrac%7BR%7D%7BL%5Csqrt%7BT%7D%7D" alt="\eta=\dfrac{R}{L\sqrt{T}}" /> và <img src="https://i.upmath.me/svg/h(%5Cdfrac%7BR%7D%7BL%5Csqrt%7BT%7D%7D)%3D%20%5Cdfrac%7BRL%7D%7B%5Csqrt%7BT%7D%7D" alt="h(\dfrac{R}{L\sqrt{T}})= \dfrac{RL}{\sqrt{T}}" />.  
 Từ đây dễ thấy với <img src="https://i.upmath.me/svg/T%20%5Cge%20%5Cdfrac%7BR%5E2B%5E2%7D%7B%5Cepsilon%5E2%7D" alt="T \ge \dfrac{R^2B^2}{\epsilon^2}" /> thì average error <img src="https://i.upmath.me/svg/%5Cle" alt="\le" /> <img src="https://i.upmath.me/svg/%5Cdfrac%7BLB%7D%7B%5Csqrt%7BT%7D%7D%20%5Cle%20%5Cepsilon" alt="\dfrac{LB}{\sqrt{T}} \le \epsilon" />.  
 Và do <img src="https://i.upmath.me/svg/f" alt="f" /> là hàm lồi nên <img src="https://i.upmath.me/svg/f%5Cbigg(%5Cdfrac%7B1%7D%7BT%7D%5Cdisplaystyle%20%5Csum_%7Bt%3D0%7D%5E%7BT-1%7Dx_t%5Cbigg)%20-%20f(x%5E*)%20%5Cle%20%5Cdfrac%7BRL%7D%7B%5Csqrt%7BT%7D%7D%20%5Cblacksquare" alt="f\bigg(\dfrac{1}{T}\displaystyle \sum_{t=0}^{T-1}x_t\bigg) - f(x^*) \le \dfrac{RL}{\sqrt{T}} \blacksquare" />.  
-Suy ra số lần cập nhật của Gradient Descent đối với hàm Lipschitz Convex Function là khoảng $$O\bigg(\dfrac{1}{\epsilon^2}\bigg)$$ với $$\epsilon>0$$ bất kỳ cho trước.  
-
+Suy ra số lần cập nhật của Gradient Descent đối với hàm Lipschitz Convex Function là khoảng <img src="https://i.upmath.me/svg/O%5Cbigg(%5Cdfrac%7B1%7D%7B%5Cepsilon%5E2%7D%5Cbigg)" alt="O\bigg(\dfrac{1}{\epsilon^2}\bigg)" /> với <img src="https://i.upmath.me/svg/%5Cepsilon%3E0" alt="\epsilon&gt;0" /> bất kỳ cho trước.  
 Ở bài sau mình sẽ nói về tốc độ hội tụ của Gradient Descent trên các hàm **Smooth Convex Function** và **Strongly Convex Function**.  
+
 ### III. Tài liệu tham khảo  
 1. https://machinelearningcoban.com/  
 2. https://github.com/epfml/OptML_course  
