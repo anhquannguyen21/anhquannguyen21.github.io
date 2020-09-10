@@ -35,6 +35,8 @@ Một cách hình học: Đoạn thẳng nối giữa <img src="https://i.upmath
      Ví dụ xét tính lồi của <img src="https://i.upmath.me/svg/%5C%7Cx%5C%7C" alt="\|x\|" />.
      Sử dụng tính chất của norm là bất đẳng thức tam giác <img src="https://i.upmath.me/svg/%5C%7Cx%2By%5C%7C%20%5Cle%20%5C%7Cx%5C%7C%20%2B%20%5C%7Cy%5C%7C" alt="\|x+y\| \le \|x\| + \|y\|" /> và <img src="https://i.upmath.me/svg/%5C%7Cax%5C%7C%20%3Da%5C%7Cx%5C%7C" alt="\|ax\| =a\|x\|" /> với <img src="https://i.upmath.me/svg/a" alt="a" /> là số thực.  
      Ta có <img src="https://i.upmath.me/svg/%5C%7C%20%5Clambda%20x%2B%20(1-%5Clambda)y%5C%7C%20%5Cle%20%5C%7C%5Clambda%20x%5C%7C%2B%20%5C%7C(1-%5Clambda)%20y%5C%7C%3D%20%5Clambda%20%5C%7Cx%5C%7C%2B%20(1-%5Clambda)%5C%7Cy%5C%7C" alt="\| \lambda x+ (1-\lambda)y\| \le \|\lambda x\|+ \|(1-\lambda) y\|= \lambda \|x\|+ (1-\lambda)\|y\|" />. Do vậy norm là một hàm lồi.  
+
+  
 ### 2. Kiểm tra tính chất lồi dựa vào đạo hàm bậc nhất (First-order characterization of convexity)
 - Định lý: Giả sử hàm số <img src="https://i.upmath.me/svg/f" alt="f" /> có tập xác định <img src="https://i.upmath.me/svg/dom(f)" alt="dom(f)" />, có đạo hàm tại mọi điểm trên tập xác định, hay vector gradient của <img src="https://i.upmath.me/svg/f" alt="f" /> là <img src="https://i.upmath.me/svg/%5Cnabla%20f%20%3A%3D%20%5Cbigg(%5Cdfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20x_1%7D(x)%2C...%2C%20%5Cdfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20x_d%7D(x)%5Cbigg)" alt="\nabla f := \bigg(\dfrac{\partial f}{\partial x_1}(x),..., \dfrac{\partial f}{\partial x_d}(x)\bigg)" /> tồn tại với mọi <img src="https://i.upmath.me/svg/x%20%5Cin%20dom(f)" alt="x \in dom(f)" />. Khi đó hàm <img src="https://i.upmath.me/svg/f" alt="f" /> lồi nếu và chỉ nếu <img src="https://i.upmath.me/svg/dom(f)" alt="dom(f)" /> lồi và <img src="https://i.upmath.me/svg/f(y)%20%5Cge%20f(x)%2B%20%5Cnabla%20f(x)%5ET(y-x)" alt="f(y) \ge f(x)+ \nabla f(x)^T(y-x)" /> với mọi <img src="https://i.upmath.me/svg/x%2C%20y%20%5Cin%20dom(f)" alt="x, y \in dom(f)" />.  
 Một cách trực quan: Hàm số là lồi nếu mặt tiếp tuyến tại một điểm bất kỳ trên đồ thị hàm số không nằm trên đồ thị đó.
@@ -98,7 +100,6 @@ Suy ra độ phức tạp của Gradient Descent đối với hàm Lipschitz Con
 4. Stephen Boyd and Lieven Vandenberghe.  
 Convex Optimization.  
 Cambridge University Press, New York, NY, USA, 2004.  
-https://web.stanford.edu/~boyd/cvxbook/.  
 5. https://easyai.tech/en/ai-definition/gradient-descent/  
 6. https://towardsdatascience.com/binary-cross-entropy-and-logistic-regression-bf7098e75559?fbclid=IwAR1kSrG7pKJQvmge-M14CUkhjsZ0nlFA1Tw_4tBDWnBkBP8_fblXLrylk3s
 
