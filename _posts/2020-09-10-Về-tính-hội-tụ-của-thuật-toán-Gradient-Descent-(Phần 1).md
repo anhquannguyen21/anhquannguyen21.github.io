@@ -93,10 +93,13 @@ Từ đây dễ thấy với <img src="https://i.upmath.me/svg/T%20%5Cge%20%5Cdf
 Và do <img src="https://i.upmath.me/svg/f" alt="f" /> là hàm lồi nên <img src="https://i.upmath.me/svg/f%5Cbigg(%5Cdfrac%7B1%7D%7BT%7D%5Cdisplaystyle%20%5Csum_%7Bt%3D0%7D%5E%7BT-1%7Dx_t%5Cbigg)%20-%20f(x%5E*)%20%5Cle%20%5Cdfrac%7BRL%7D%7B%5Csqrt%7BT%7D%7D%20%5Cblacksquare" alt="f\bigg(\dfrac{1}{T}\displaystyle \sum_{t=0}^{T-1}x_t\bigg) - f(x^*) \le \dfrac{RL}{\sqrt{T}} \blacksquare" />.  
 Suy ra độ phức tạp của Gradient Descent đối với hàm Lipschitz Convex Function là <img src="https://i.upmath.me/svg/O%5Cbigg(%5Cdfrac%7B1%7D%7B%5Cepsilon%5E2%7D%5Cbigg)" alt="O\bigg(\dfrac{1}{\epsilon^2}\bigg)" />.  
 Ở bài sau mình sẽ nói về tốc độ hội tụ của Gradient Descent trên các hàm **Smooth Convex Function** và **Strongly Convex Function**.  
-### III. Tài liệu tham khảo
+### III. Tài liệu tham khảo  
 1. https://machinelearningcoban.com/  
 2. https://github.com/epfml/OptML_course  
 3. https://ee227c.github.io/  
+4. Stephen Boyd and Lieven Vandenberghe.  
+   Convex Optimization.  
+   Cambridge University Press, New York, NY, USA, 2004.  
 5. https://easyai.tech/en/ai-definition/gradient-descent/  
 6. https://towardsdatascience.com/binary-cross-entropy-and-logistic-regression-bf7098e75559?fbclid=IwAR1kSrG7pKJQvmge-M14CUkhjsZ0nlFA1Tw_4tBDWnBkBP8_fblXLrylk3s
 
