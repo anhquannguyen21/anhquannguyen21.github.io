@@ -97,9 +97,6 @@ Suy ra độ phức tạp của Gradient Descent đối với hàm Lipschitz Con
 1. https://machinelearningcoban.com/  
 2. https://github.com/epfml/OptML_course  
 3. https://ee227c.github.io/  
-4. Stephen Boyd and Lieven Vandenberghe.  
-Convex Optimization.  
-Cambridge University Press, New York, NY, USA, 2004.  
 5. https://easyai.tech/en/ai-definition/gradient-descent/  
 6. https://towardsdatascience.com/binary-cross-entropy-and-logistic-regression-bf7098e75559?fbclid=IwAR1kSrG7pKJQvmge-M14CUkhjsZ0nlFA1Tw_4tBDWnBkBP8_fblXLrylk3s
 
