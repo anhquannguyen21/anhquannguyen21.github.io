@@ -15,7 +15,9 @@ Công thức cập nhật trọng số:  <img src="https://i.upmath.me/svg/%5Cth
 Chi tiết rõ hơn về thuật toán, các biến thể và cách cài đặt có thể xem tại  [Blog Machine Learning cơ bản](https://machinelearningcoban.com/2017/01/12/gradientdescent/)
 - Ở bài này mình sẽ phân tích tính hội tụ của Gradient Descent, số lần lặp tối thiểu để thuật toán hội tụ và tốc độ hội tụ của từng dạng hàm số (các hàm được đề cập đều có tính chất chung là hàm lồi). Trước tiên ta đi qua một số kiến thức chuẩn bị.  
 
-## I. Một số kiến thức chuẩn bị  
+## I. Một số kiến thức chuẩn bị
+
+
 ### 1. Lý thuyết về tập lồi, hàm lồi
 - Một tập <img src="https://i.upmath.me/svg/C" alt="C" /> được gọi là tập lồi nếu mọi điểm trên đoạn thẳng nối 2 điểm bất kỳ trong tập <img src="https://i.upmath.me/svg/C" alt="C" /> đều thuộc tập hợp <img src="https://i.upmath.me/svg/C" alt="C" />. Tức là, với 2 điểm bất kỳ <img src="https://i.upmath.me/svg/x%2C%20y%20%5Cin%20C" alt="x, y \in C" /> và với <img src="https://i.upmath.me/svg/0%20%5Cle%20%5Clambda%20%5Cle%201" alt="0 \le \lambda \le 1" /> ta có <img src="https://i.upmath.me/svg/%5Clambda%20x%20%2B%20(1-%5Clambda)y%20%5Cin%20C" alt="\lambda x + (1-\lambda)y \in C" />.  
 - Ví dụ tập lồi  
