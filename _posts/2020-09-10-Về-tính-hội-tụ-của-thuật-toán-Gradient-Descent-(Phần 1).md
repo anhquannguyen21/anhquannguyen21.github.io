@@ -1,3 +1,10 @@
+---
+layout: post
+title: Về tính hội tụ của thuật toán Gradient Descent (Phần 1)
+tags: [Convex Optimization]
+---
+
+
 [![B4.png](https://i.postimg.cc/B6N7nH5v/B4.png)](https://postimg.cc/TLLJky48)
 - Trong bài toán tối ưu cụ thể là các bài toán tìm giá trị lớn nhất hay giá trị nhỏ nhất của một hàm số, ta thường đi giải phương trình đạo hàm hoặc đạo hàm riêng bằng 0 đối với hàm nhiều biến. Tuy nhiên, việc tối ưu hàm lỗi trong Machine Learning gặp phải các vấn đề sau:  
   - Với những tập dữ liệu lớn, nhiều chiều thì sẽ gây ra tốn bộ nhớ của máy tính và tính toán chậm chạp. Ví dụ công thức tính tham số của thuật toán Linear Regression như sau <img src="https://i.upmath.me/svg/w%3D(X%5E%7BT%7DX)%5E%7B%5Cdagger%7DX%5E%7BT%7Dy" alt="w=(X^{T}X)^{\dagger}X^{T}y" />  (kí hiệu <img src="https://i.upmath.me/svg/%20A%5E%7B%5Cdagger%7D" alt=" A^{\dagger}" /> là ma trận giả nghịch đảo). Khi đó nếu dữ liệu train lớn và chiều của dữ liệu lớn thì kích thước ma trận <img src="https://i.upmath.me/svg/X" alt="X" /> sẽ lớn, việc tính nghịch đảo và nhân ma trận sẽ chậm.
