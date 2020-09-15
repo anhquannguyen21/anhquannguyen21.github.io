@@ -1,3 +1,13 @@
+---
+layout: post
+title: Về tính hội tụ của thuật toán Gradient Descent (Phần 2)
+tags: [Convex Optimization]
+---
+
+
+
+
+
 [![B4.png](https://i.postimg.cc/B6N7nH5v/B4.png)](https://postimg.cc/TLLJky48)
 - Ở bài trước mình đã phân tính tính hội tụ của Gradient Descent đối với hàm **Lipschitz Convex Function**. Số steps khoảng <img src="https://i.upmath.me/svg/O%5Cbigg(%5Cdfrac%7B1%7D%7B%5Cepsilon%5E2%7D%5Cbigg)" alt="O\bigg(\dfrac{1}{\epsilon^2}\bigg)" />.  
 - Bài viết này mình sẽ phân tích tính hội tụ của Gradient Descent với dạng hàm **Smooth Convex Function**.  
