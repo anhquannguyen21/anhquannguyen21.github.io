@@ -38,7 +38,9 @@ Về spectral norm của ma trận được định nghĩa như sau:
 Lưu ý:  spectral norm này khác với Frobenius norm của ma trận.  
 **Chứng minh**  
 Do <img src="https://i.upmath.me/svg/Q" alt="Q" /> là ma trận đối xứng, nửa xác định dương nên <img src="https://i.upmath.me/svg/f(x)" alt="f(x)" /> là hàm lồi.  Hơn nữa ta cũng có <img src="https://i.upmath.me/svg/x%5ETQy%3Dy%5ETQx" alt="x^TQy=y^TQx" /> với <img src="https://i.upmath.me/svg/x%2C%20y" alt="x, y" /> bất kỳ.  Khi đó có thể viết lại  
-<img src="https://i.upmath.me/svg/f(y)%3Dy%5ETQy%3Dx%5ETQx%2B2x%5ETQ(y-x)%2B(x-y)%5ETQ(x-y)%3D%20%5C%5C%20%20f(x)%2B%202x%5ETQ(y-x)%2B(x-y)%5ETQ(x-y)" alt="f(y)=y^TQy=x^TQx+2x^TQ(y-x)+(x-y)^TQ(x-y)= \\  f(x)+ 2x^TQ(y-x)+(x-y)^TQ(x-y)" />. Sử dụng bất đẳng thức Cauchy-Schwarz và tính chất của spectral norm ta có  
+<img src="https://i.upmath.me/svg/f(y)%3Dy%5ETQy%3Dx%5ETQx%2B2x%5ETQ(y-x)%2B(x-y)%5ETQ(x-y)%3D%20%5C%5C%20%20f(x)%2B%202x%5ETQ(y-x)%2B(x-y)%5ETQ(x-y)" alt="f(y)=y^TQy=x^TQx+2x^TQ(y-x)+(x-y)^TQ(x-y)= \\  f(x)+ 2x^TQ(y-x)+(x-y)^TQ(x-y)" />  
+
+Sử dụng bất đẳng thức Cauchy-Schwarz và tính chất của spectral norm ta có  
 <img src="https://i.upmath.me/svg/(x-y)%5ETQ(x-y)%20%5Cle%20%5C%7Cx-y%5C%7C%5C%7CQ(x-y)%5C%7C%5Cle%20%5C%7Cx-y%5C%7C%5C%7CQ%5C%7C%5C%7Cx-y%5C%7C%3D%5C%7CQ%5C%7C%5C%7Cx-y%5C%7C%5E2" alt="(x-y)^TQ(x-y) \le \|x-y\|\|Q(x-y)\|\le \|x-y\|\|Q\|\|x-y\|=\|Q\|\|x-y\|^2" />  
 Suy ra <img src="https://i.upmath.me/svg/f(y)%20%5Cle%20f(x)%20%2B2x%5ETQ(y-x)%20%2B%20%5C%7CQ%5C%7C%5C%7Cx-y%5C%7C%5E2" alt="f(y) \le f(x) +2x^TQ(y-x) + \|Q\|\|x-y\|^2" />. Mà <img src="https://i.upmath.me/svg/%5Cnabla%20f(x)%20%3D2x%5ETQ" alt="\nabla f(x) =2x^TQ" />. Do đó  
 <img src="https://i.upmath.me/svg/f(y)%20%5Cle%20f(x)%20%2B%20%5Cnabla%20f(x)(y-x)%20%2B%5Cdfrac%7B2%5C%7CQ%5C%7C%7D%7B2%7D%5C%7Cx-y%5C%7C%5E2" alt="f(y) \le f(x) + \nabla f(x)(y-x) +\dfrac{2\|Q\|}{2}\|x-y\|^2" />. Điều này chứng tỏ <img src="https://i.upmath.me/svg/f" alt="f" /> smooth với tham số <img src="https://i.upmath.me/svg/2%5C%7CQ%5C%7C" alt="2\|Q\|" />  
