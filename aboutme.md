@@ -23,4 +23,5 @@ Lĩnh vực yêu thích:
 - Machine Learning
 - Deep Learning
 - Computer Vision
+- Natural Language Processing
 
