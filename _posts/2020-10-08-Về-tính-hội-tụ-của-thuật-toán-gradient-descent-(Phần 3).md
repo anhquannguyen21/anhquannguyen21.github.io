@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Về tính hội tụ của thuật toán Gradient Descent (Phần 2)
+title: Về tính hội tụ của thuật toán Gradient Descent (Phần 3)
 tags: [Convex Optimization]
 ---
 
