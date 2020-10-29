@@ -22,6 +22,5 @@ Lĩnh vực yêu thích:
 - Linear Algebra, Calculus and Optimization
 - Machine Learning
 - Deep Learning
-- Computer Vision
-- Natural Language Processing
+- Computer Vision, NLP
 
