@@ -16,7 +16,7 @@ Sau đó thực hiện cập nhật sau mỗi bước:
 [![ep1.png](https://i.postimg.cc/pTShKpPj/ep1.png)](https://postimg.cc/r0Swky0y)  
                        Minh họa Bound Optimization: Đường nét đứt màu đỏ là hàm mục tiêu gốc, đường nét liền màu xanh là lower bound tại vị trí <img src="https://i.upmath.me/svg/%5Ctheta%5Et" alt="\theta^t" />, nó tiếp xúc với hàm objective gốc tại vị trí <img src="https://i.upmath.me/svg/%5Ctheta%5Et" alt="\theta^t" />, và maximum của đường này là <img src="https://i.upmath.me/svg/%5Ctheta%5E%7Bt%2B1%7D" alt="\theta^{t+1}" />. Đường nét đứt màu xanh tiếp xúc với hàm mục tiêu gốc tại <img src="https://i.upmath.me/svg/%5Ctheta%5E%7Bt%2B1%7D" alt="\theta^{t+1}" />, maximum mới là <img src="https://i.upmath.me/svg/%5Ctheta%5E%7Bt%2B2%7D" alt="\theta^{t+2}" />.  
                        
-   ### **II. Thuật toán Expectation Maximization (EM)**  
+ ### **II. Thuật toán Expectation Maximization (EM)**  
 
 - EM là thuật toán để tính MLE (Maximum Likelihood Estimation) hoặc MAP parameter estimate cho probability models mà có dữ liệu không đầy đủ (missing data) hoặc có biến ẩn (hidden variables).    
 *"A general technique for finding maximum likelihood estimators in latent variable models is the expectation-maximization (EM) algorithm."*  
@@ -28,7 +28,7 @@ Sau đó thực hiện cập nhật sau mỗi bước:
   2. **M step (Maximization step)**: Maximize the parameters of the model in the presence of the data.  
 - Một số ứng dụng của EM như fit mixture models (such as Gaussian mixture model), fit a multivariate Gaussian (khi missing data), fit robust linear regression models,...  
   
-    #### 1. Lower bound  
+ #### 1. Lower bound  
 - Mục tiêu của thuật toán EM là maximize log likelihood của dữ liệu quan sát được (observed data):  
 [![ep2.png](https://i.postimg.cc/HLvXtpmQ/ep2.png)](https://postimg.cc/xkHXfVcC)  
   
@@ -49,7 +49,7 @@ Sau đó thực hiện cập nhật sau mỗi bước:
   Biểu thức <img src="https://i.upmath.me/svg/Q" alt="Q" /> ở dòng cuối cùng được gọi là **evidence lower bound** hoặc **ELBO**. (ELBO sẽ được đề cập tiếp trong bài viết về **Variational Autoencoder**)  
  Thuật toán EM sẽ luân phiên việc tối đa lower bound <img src="https://i.upmath.me/svg/Q" alt="Q" /> wrt phân phối <img src="https://i.upmath.me/svg/q_n" alt="q_n" /> và tham số <img src="https://i.upmath.me/svg/%5Ctheta" alt="\theta" />  
    
-   #### 2. E step
+ #### 2. E step
 - Ta có:  
 [![ep1.png](https://i.postimg.cc/7Zt0DxRf/ep1.png)](https://postimg.cc/sMSv4Rsr)  
   
