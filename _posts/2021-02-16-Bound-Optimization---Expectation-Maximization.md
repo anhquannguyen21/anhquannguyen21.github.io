@@ -26,6 +26,7 @@ Sau đó thực hiện cập nhật sau mỗi bước:
   1. **E step (Expectation step)**: Estimate the missing variables in the dataset.
   2. **M step (Maximization step)**: Maximize the parameters of the model in the presence of the data.  
 - Một số ứng dụng của EM như fit mixture models (such as Gaussian mixture model), fit a multivariate Gaussian (khi missing data), fit robust linear regression models,...  
+  
      #### 1. Lower bound  
 - Mục tiêu của thuật toán EM là maximize log likelihood của dữ liệu quan sát được (observed data):  
 [![ep2.png](https://i.postimg.cc/HLvXtpmQ/ep2.png)](https://postimg.cc/xkHXfVcC)  
@@ -45,7 +46,8 @@ Sau đó thực hiện cập nhật sau mỗi bước:
    trong đó <img src="https://i.upmath.me/svg/H(q)" alt="H(q)" /> là phân phối xác suất của <img src="https://i.upmath.me/svg/q" alt="q" />:  
   <img src="https://i.upmath.me/svg/%5Cdisplaystyle%20H(q)%3D-%5Csum_z%20q(z)%5Clog%20q(z)" alt="\displaystyle H(q)=-\sum_z q(z)\log q(z)" />  
   Biểu thức <img src="https://i.upmath.me/svg/Q" alt="Q" /> ở dòng cuối cùng được gọi là **evidence lower bound** hoặc **ELBO**. (ELBO sẽ được đề cập tiếp trong bài viết về **Variational Autoencoder**)  
- Thuật toán EM sẽ luân phiên việc tối đa lower bound <img src="https://i.upmath.me/svg/Q" alt="Q" /> wrt phân phối <img src="https://i.upmath.me/svg/q_n" alt="q_n" /> và tham số <img src="https://i.upmath.me/svg/%5Ctheta" alt="\theta" />
+ Thuật toán EM sẽ luân phiên việc tối đa lower bound <img src="https://i.upmath.me/svg/Q" alt="Q" /> wrt phân phối <img src="https://i.upmath.me/svg/q_n" alt="q_n" /> và tham số <img src="https://i.upmath.me/svg/%5Ctheta" alt="\theta" />  
+   
    #### 2. E step
 - Ta có:  
 [![ep1.png](https://i.postimg.cc/7Zt0DxRf/ep1.png)](https://postimg.cc/sMSv4Rsr)  
