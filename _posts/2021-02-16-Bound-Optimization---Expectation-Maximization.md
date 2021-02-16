@@ -15,6 +15,7 @@ Sau đó thực hiện cập nhật sau mỗi bước:
 <img src="https://i.upmath.me/svg/l(%5Ctheta%5E%7Bt%2B1%7D)%20%5Cge%20Q(%5Ctheta%5E%7Bt%2B1%7D%2C%20%5Ctheta%5Et)%20%5Cge%20Q(%5Ctheta%5Et%2C%20%5Ctheta%5Et)%20%3D%20l(%5Ctheta%5Et)" alt="l(\theta^{t+1}) \ge Q(\theta^{t+1}, \theta^t) \ge Q(\theta^t, \theta^t) = l(\theta^t)" />  
 [![ep1.png](https://i.postimg.cc/pTShKpPj/ep1.png)](https://postimg.cc/r0Swky0y)  
                        Minh họa Bound Optimization: Đường nét đứt màu đỏ là hàm mục tiêu gốc, đường nét liền màu xanh là lower bound tại vị trí <img src="https://i.upmath.me/svg/%5Ctheta%5Et" alt="\theta^t" />, nó tiếp xúc với hàm objective gốc tại vị trí <img src="https://i.upmath.me/svg/%5Ctheta%5Et" alt="\theta^t" />, và maximum của đường này là <img src="https://i.upmath.me/svg/%5Ctheta%5E%7Bt%2B1%7D" alt="\theta^{t+1}" />. Đường nét đứt màu xanh tiếp xúc với hàm mục tiêu gốc tại <img src="https://i.upmath.me/svg/%5Ctheta%5E%7Bt%2B1%7D" alt="\theta^{t+1}" />, maximum mới là <img src="https://i.upmath.me/svg/%5Ctheta%5E%7Bt%2B2%7D" alt="\theta^{t+2}" />.  
+                       
    ### **II. Thuật toán Expectation Maximization (EM)**  
 
 - EM là thuật toán để tính MLE (Maximum Likelihood Estimation) hoặc MAP parameter estimate cho probability models mà có dữ liệu không đầy đủ (missing data) hoặc có biến ẩn (hidden variables).    
@@ -27,7 +28,7 @@ Sau đó thực hiện cập nhật sau mỗi bước:
   2. **M step (Maximization step)**: Maximize the parameters of the model in the presence of the data.  
 - Một số ứng dụng của EM như fit mixture models (such as Gaussian mixture model), fit a multivariate Gaussian (khi missing data), fit robust linear regression models,...  
   
-     #### 1. Lower bound  
+    #### 1. Lower bound  
 - Mục tiêu của thuật toán EM là maximize log likelihood của dữ liệu quan sát được (observed data):  
 [![ep2.png](https://i.postimg.cc/HLvXtpmQ/ep2.png)](https://postimg.cc/xkHXfVcC)  
   
@@ -71,10 +72,10 @@ Biểu thức này được gọi là **expected complete data log likelihood**.
   Về ứng dụng của EM mình sẽ trình bày ở các bài tiếp theo.  
 ## III. Tài liệu tham khảo  
 1. Probabilistic Machine Learning: An Introduction, by Kevin Patrick Murphy.
-MIT Press, 2021.  
+MIT Press, 2021.    
 https://probml.github.io/pml-book/book1.html  
-2. http://uet.vnu.edu.vn/~tqlong/2016hmtk/em.pdf
-3. https://machinelearningmastery.com/expectation-maximization-em-algorithm/
+2. http://uet.vnu.edu.vn/~tqlong/2016hmtk/em.pdf  
+3. https://machinelearningmastery.com/expectation-maximization-em-algorithm/  
 
 
 
