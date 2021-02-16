@@ -6,7 +6,7 @@ tags: [Machine Learning]
 
 
 
-- Trong bài viết này chúng ta sẽ đề cập đến một lớp các thuật toán được gọi là **Bound Optimization** hoặc **MM Optimization**. Trong ngữ cảnh minimization, MM được hiểu là **Majorize-Minimize**, trong ngữ cảnh maximization, MM được hiểu là **Majorize-Maximize**. Chúng ta sẽ nói về một trường hợp đặc biệt của MM là **Expectation Maximization** hoặc **EM**.  
+- Trong bài viết này chúng ta sẽ đề cập đến một lớp các thuật toán được gọi là **Bound Optimization** hoặc **MM Optimization**. Trong ngữ cảnh minimization, MM được hiểu là **Majorize-Minimize**, trong ngữ cảnh maximization, MM được hiểu là **Majorize-Maximize**. Chúng ta sẽ nói về một trường hợp đặc biệt của MM là **Expectation Maximization** hoặc **EM**.    
 **I. Định nghĩa**
 - Giả sử mục tiệu là maximize hàm <img src="https://i.upmath.me/svg/L(%5Ctheta)" alt="L(\theta)" />, chẳng hạn như hàm log likelihood với tham số <img src="https://i.upmath.me/svg/%5Ctheta" alt="\theta" />. Cách tiếp cận cơ bản trong MM là đi xây dựng **surrogate function** <img src="https://i.upmath.me/svg/Q(%5Ctheta%2C%20%5Ctheta%5Et)" alt="Q(\theta, \theta^t)" /> là một chặn dưới của <img src="https://i.upmath.me/svg/L(%5Ctheta)" alt="L(\theta)" />, <img src="https://i.upmath.me/svg/Q(%5Ctheta%2C%20%5Ctheta%5Et)%20%5Cle%20L(%5Ctheta)" alt="Q(\theta, \theta^t) \le L(\theta)" /> và <img src="https://i.upmath.me/svg/Q(%5Ctheta%5Et%2C%20%5Ctheta%5Et)%20%3D%20L(%5Ctheta%5Et)" alt="Q(\theta^t, \theta^t) = L(\theta^t)" />. Nếu các điều kiện này thỏa mãn, ta gọi <img src="https://i.upmath.me/svg/Q" alt="Q" /> **minorizes** <img src="https://i.upmath.me/svg/L" alt="L" />.  
 Sau đó thực hiện cập nhật sau mỗi bước:  
