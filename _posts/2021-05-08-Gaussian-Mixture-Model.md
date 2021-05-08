@@ -240,8 +240,6 @@ Tóm tắt thuật toán như sau:
 r_{n k}=\frac{\pi_{k} \mathcal{N}\left(\boldsymbol{x}_{n} \mid \boldsymbol{\mu}_{k}, \boldsymbol{\Sigma}_{k}\right)}{\sum_{j} \pi_{j} \mathcal{N}\left(\boldsymbol{x}_{n} \mid \boldsymbol{\mu}_{j}, \boldsymbol{\Sigma}_{j}\right)}
 " />
 3. M-step: Reestimate parameters <img src="https://i.upmath.me/svg/%5Cpi_%7Bk%7D%2C%20%5Cboldsymbol%7B%5Cmu%7D_%7Bk%7D%2C%20%5Cboldsymbol%7B%5CSigma%7D_%7Bk%7D" alt="\pi_{k}, \boldsymbol{\mu}_{k}, \boldsymbol{\Sigma}_{k}" /> using the current responsibilities <img src="https://i.upmath.me/svg/r_%7Bn%20k%7D" alt="r_{n k}" /> (from E-step):  
-  
-
 <img src="https://i.upmath.me/svg/%0A%5Cbegin%7Baligned%7D%0A%5Cboldsymbol%7B%5Cmu%7D_%7Bk%7D%20%26%3D%5Cfrac%7B1%7D%7BN_%7Bk%7D%7D%20%5Csum_%7Bn%3D1%7D%5E%7BN%7D%20r_%7Bn%20k%7D%20%5Cboldsymbol%7Bx%7D_%7Bn%7D%20%5C%5C%0A%5Cboldsymbol%7B%5CSigma%7D_%7Bk%7D%20%26%3D%5Cfrac%7B1%7D%7BN_%7Bk%7D%7D%20%5Csum_%7Bn%3D1%7D%5E%7BN%7D%20r_%7Bn%20k%7D%5Cleft(%5Cboldsymbol%7Bx%7D_%7Bn%7D-%5Cboldsymbol%7B%5Cmu%7D_%7Bk%7D%5Cright)%5Cleft(%5Cboldsymbol%7Bx%7D_%7Bn%7D-%5Cboldsymbol%7B%5Cmu%7D_%7Bk%7D%5Cright)%5E%7B%5Ctop%7D%2C%20%5C%5C%0A%5Cpi_%7Bk%7D%20%26%3D%5Cfrac%7BN_%7Bk%7D%7D%7BN%7D%0A%5Cend%7Baligned%7D%0A" alt="
 \begin{aligned}
 \boldsymbol{\mu}_{k} &amp;=\frac{1}{N_{k}} \sum_{n=1}^{N} r_{n k} \boldsymbol{x}_{n} \\
