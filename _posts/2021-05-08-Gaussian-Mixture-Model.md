@@ -524,7 +524,7 @@ plot_contours(data, results['means'], results['covs'], 'Final clusters')
   
 [![gmm.png](https://i.postimg.cc/3N9wdTn1/gmm.png)](https://postimg.cc/T5Lx4Z85)    
   
-## IV. Tài liệu tham khảo 
+## III. Tài liệu tham khảo 
 1. Book Mathematics for Machine Learning, by Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong.  
 2. https://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/gaussian.pdf  
 
